@@ -20,8 +20,9 @@ class ConvertorModifier(object):
 
         :returns: Modified JSON data
         """
+
         parent = self.metadata[self.meta_index][self.field_id]['values']['parent']
-        # value = current if new is None else new
+        value = current if new is None else new
         if parent:
             self.update_dict(parent, self.data, value)
             return value
