@@ -9,7 +9,7 @@ class ConvertorModifier(object):
         self.metadata = kwargs.get("metadata")
         self.code_value = kwargs.get("code_value", None)
         self.meta_index = kwargs.get("meta_index", 0)
-        # self.field_index = kwargs.get("field_index", 0)
+        self.field_index = kwargs.get("field_index", 0)
 
     def convertor(self, current, new):
         """
